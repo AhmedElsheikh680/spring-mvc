@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Home</title>
 </head>
 <body>
-	<h1>Ahmed Elsheikhsssssssssssss</h1>
-	<a href="login">Home</a>
+	<h1>Welcome..</h1>
+	<h3>UserName: ${param.username}</h3>
+	<h>Password: ${param.password }</h>
 </body>
 </html>

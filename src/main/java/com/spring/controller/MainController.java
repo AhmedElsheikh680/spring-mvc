@@ -14,5 +14,13 @@ public class MainController {
 	public String profile() {
 		return "profile";
 	}
+	@RequestMapping("/login")
+	public String login() {
+		return "login";
+	}
+	@RequestMapping("/loginprecess")
+	public String loginprecess() {
+		return "home";
+	}
 
 }
