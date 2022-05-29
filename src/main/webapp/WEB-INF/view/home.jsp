@@ -8,7 +8,9 @@
 </head>
 <body>
 	<h1>Welcome..</h1>
-	<h3>UserName: ${param.username}</h3>
-	<h>Password: ${param.password }</h>
+	<!--  <h3>UserName: ${param.username}</h3>
+	<h>Password: ${param.password }</h> -->
+		<h3>UserName: ${Username}</h3>
+	<h>Password: ${Password} </h>
 </body>
 </html>
