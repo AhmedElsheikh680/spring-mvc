@@ -19,6 +19,11 @@
 		<form:input path="fName"/>
 		<form:input path="lName"/>
 		<form:input path="age"/>
+		<form:select path="country">
+			<form:option value="Egupt" label="EG" />
+			<form:option value="Brazil" label="BR" />
+			<form:option value="German" label="GR" />	
+		</form:select>
 		<input type="submit" value="Done" />
 	</form:form>
 </body>
