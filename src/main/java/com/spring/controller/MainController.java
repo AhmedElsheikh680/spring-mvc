@@ -19,26 +19,7 @@ public class MainController {
 	public String profile() {
 		return "profile";
 	}
-	@RequestMapping("/login")
-	public String login() {
-		return "login";
-	}
-//	@RequestMapping("/loginprecess")
-//	public String loginprecess(HttpServletRequest request, Model model) {
-//		String username = request.getParameter("username").toUpperCase();
-//		String password = request.getParameter("password");
-//		model.addAttribute("Username", username);
-//		model.addAttribute("Password", password);
-//		return "home";
-//	}
 	
-	@RequestMapping("/loginprecess")
-	public String loginprecess(@RequestParam("username")String username, @RequestParam("password") String password, Model model) {
-		
-		model.addAttribute("Username", username);
-		model.addAttribute("Password", password);
-		return "home";
-	}
 	
 	
 	
