@@ -24,11 +24,14 @@
 		<input type="submit" value="Login" />
 	</form>  -->
 	<form:form modelAttribute="student" action="studentprocess">
-		<form:input path="fName"/>
+		<form:input path="fName" placeholder="First Name"/>
 		<form:errors path="fName" cssClass="error"/>
 		<br /><br />
-		<form:input path="lName"/><br /><br />
-		<form:input path="age"/><br /><br />
+		<form:input path="lName" placeholder="Last Name"/><br />
+		<form:errors path="lName" cssClass="error"/>
+		
+		<form:input path="age" placeholder="Age"/><br /><br />
+		<form:errors path="age" cssClass="error" />
 		<form:select path="country">
 			<form:options items="${ student.countryOption}"/>
 		</form:select>
