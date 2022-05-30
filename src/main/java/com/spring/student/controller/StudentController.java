@@ -1,12 +1,16 @@
 package com.spring.student.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.spring.model.Student;
+
 
 @Controller
 @RequestMapping("/student")
@@ -32,8 +36,13 @@ public class StudentController {
 //		return "students/show";
 //	}
 	@RequestMapping("/studentprocess")
-	public String studentprocess(@ModelAttribute("student")Student student) {
-		return "students/show";
+	public String studentprocess(@Valid @ModelAttribute("student")Student student, BindingResult result) {
+		if(result.hasErrors()) {
+			return "students/account";
+		} else {
+			return "students/show";
+		}
+		
 	}
 	
 	

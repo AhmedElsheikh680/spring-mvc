@@ -7,6 +7,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style type="text/css">
+	.error {
+		color:#f00;
+		font-weight: bold;
+		font-size: 20px;
+		
+	}
+</style>
 </head>
 <body>
 	<!--  <form action="studentprocess">
@@ -16,7 +24,9 @@
 		<input type="submit" value="Login" />
 	</form>  -->
 	<form:form modelAttribute="student" action="studentprocess">
-		<form:input path="fName"/><br /><br />
+		<form:input path="fName"/>
+		<form:errors path="fName" cssClass="error"/>
+		<br /><br />
 		<form:input path="lName"/><br /><br />
 		<form:input path="age"/><br /><br />
 		<form:select path="country">

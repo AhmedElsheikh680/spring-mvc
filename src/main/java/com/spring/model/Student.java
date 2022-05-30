@@ -1,9 +1,13 @@
 package com.spring.model;
 
 import java.util.HashMap;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 public class Student {
 
+	@NotNull(message="required")
+	@Size(min=3, message="required")
 	private String fName;
 	private String lName;
 	private String age;
