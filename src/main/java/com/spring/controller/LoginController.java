@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @RequestMapping("/process")
 public class LoginController {
+	// 127.0.0.1:8085/spring-mvc/login
 	@RequestMapping("/login")
 	public String login() {
 		return "login";

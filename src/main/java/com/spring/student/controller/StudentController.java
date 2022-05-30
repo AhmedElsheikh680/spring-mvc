@@ -11,6 +11,7 @@ import com.spring.model.Student;
 @Controller
 @RequestMapping("/student")
 public class StudentController {
+	// 127.0.0.1:8085/spring-mvc/student/account
 //	@RequestMapping("/account")
 //	public String account() {
 //		return "students/account";
