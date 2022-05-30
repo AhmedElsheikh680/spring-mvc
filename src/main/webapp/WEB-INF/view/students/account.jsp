@@ -29,6 +29,10 @@
 		<form:radiobutton path="language" value="Python" />Python
 		<form:radiobutton path="language" value="Ruby" />Ruby
 		<br /><br /><br />	
+		Players:
+		<form:checkbox path="players" value="Messi"/>Messi
+		<form:checkbox path="players" value="CR7" />CR7
+		<form:checkbox path="players" value="Salah" />Salah
 		<input type="submit" value="Done" />
 	</form:form>
 </body>
