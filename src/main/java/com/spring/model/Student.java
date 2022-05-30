@@ -27,6 +27,9 @@ public class Student {
 	@Max(value=50, message="Age Must Be Less Than OR Equal 50")
 	private String age;
 	
+	@NotNull(message="Code Required")
+	private Integer code;
+	
 	private String country;
 	private HashMap<String, String> countryOption;
 	private String language;
@@ -87,6 +90,11 @@ public class Student {
 		this.email = email;
 	}
 	
-	
+	public Integer getCode() {
+		return code;
+	}
+	public void setCode(Integer code) {
+		this.code = code;
+	}
 
 }

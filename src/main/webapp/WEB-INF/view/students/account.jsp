@@ -35,6 +35,9 @@
 		<form:errors path="email" cssClass="error" /><br /><br />
 		<form:input path="age" placeholder="Age"/>
 		<form:errors path="age" cssClass="error" /><br /><br />
+		
+		<form:input path="code" placeholder="Code" />
+		<form:errors path="code" cssClass="error" /><br><br>
 		<form:select path="country">
 			<form:options items="${ student.countryOption}"/>
 		</form:select>
