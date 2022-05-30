@@ -5,19 +5,24 @@ import java.util.HashMap;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Student {
 
-	@NotNull(message="Required")
-	@Size(min=3, message="Required")
+	@NotNull(message="First Name Required")
+	@Size(min=3, message="First Name Required")
 	private String fName;
 	
-	@NotNull(message="required")
-	@Size(min=3, message="required")
+	@NotNull(message="Last Name required")
+	@Size(min=3, message="Last Name required")
 	private String lName;
 	
-	@NotNull(message="Required")
+	@NotNull(message="Email Required")
+	@Pattern(regexp = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$", message="Invalid Email")
+	private String email;
+	
+	@NotNull(message="Age Required")
 	@Min(value = 20, message="Age Must Be Greater Than OR Equal 20")
 	@Max(value=50, message="Age Must Be Less Than OR Equal 50")
 	private String age;
@@ -74,6 +79,12 @@ public class Student {
 	}
 	public void setPlayers(String[] players) {
 		this.players = players;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	

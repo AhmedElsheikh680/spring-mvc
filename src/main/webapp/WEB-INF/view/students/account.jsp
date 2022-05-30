@@ -27,11 +27,14 @@
 		<form:input path="fName" placeholder="First Name"/>
 		<form:errors path="fName" cssClass="error"/>
 		<br /><br />
-		<form:input path="lName" placeholder="Last Name"/><br />
-		<form:errors path="lName" cssClass="error"/>
+		<form:input path="lName" placeholder="Last Name"/>
+		<form:errors path="lName" cssClass="error"/><br /><br />
 		
-		<form:input path="age" placeholder="Age"/><br /><br />
-		<form:errors path="age" cssClass="error" />
+		<br /><br />
+		<form:input path="email" placeholder="Email" />
+		<form:errors path="email" cssClass="error" /><br /><br />
+		<form:input path="age" placeholder="Age"/>
+		<form:errors path="age" cssClass="error" /><br /><br />
 		<form:select path="country">
 			<form:options items="${ student.countryOption}"/>
 		</form:select>
