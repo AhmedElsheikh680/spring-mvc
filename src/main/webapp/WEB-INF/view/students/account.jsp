@@ -16,13 +16,13 @@
 		<input type="submit" value="Login" />
 	</form>  -->
 	<form:form modelAttribute="student" action="studentprocess">
-		<form:input path="fName"/>
-		<form:input path="lName"/>
-		<form:input path="age"/>
+		<form:input path="fName"/><br /><br />
+		<form:input path="lName"/><br /><br />
+		<form:input path="age"/><br /><br />
 		<form:select path="country">
 			<form:options items="${ student.countryOption}"/>
 		</form:select>
-		<br />
+		<br /><br /><br />
 		Choose Your Lang:
 		<form:radiobutton path="language" value="Java"/>Java
 		<form:radiobutton path="language" value="PHP" />PHP
@@ -32,7 +32,7 @@
 		Players:
 		<form:checkbox path="players" value="Messi"/>Messi
 		<form:checkbox path="players" value="CR7" />CR7
-		<form:checkbox path="players" value="Salah" />Salah
+		<form:checkbox path="players" value="Salah" />Salah<br /><br />
 		<input type="submit" value="Done" />
 	</form:form>
 </body>
