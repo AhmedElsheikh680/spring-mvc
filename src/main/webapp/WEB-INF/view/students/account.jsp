@@ -22,6 +22,13 @@
 		<form:select path="country">
 			<form:options items="${ student.countryOption}"/>
 		</form:select>
+		<br />
+		Choose Your Lang:
+		<form:radiobutton path="language" value="Java"/>Java
+		<form:radiobutton path="language" value="PHP" />PHP
+		<form:radiobutton path="language" value="Python" />Python
+		<form:radiobutton path="language" value="Ruby" />Ruby
+		<br /><br /><br />	
 		<input type="submit" value="Done" />
 	</form:form>
 </body>
