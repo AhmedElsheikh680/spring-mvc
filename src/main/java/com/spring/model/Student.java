@@ -8,6 +8,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.spring.validation.VertyCode;
+
 public class Student {
 
 	@NotNull(message="First Name Required")
@@ -29,6 +31,9 @@ public class Student {
 	
 	@NotNull(message="Code Required")
 	private Integer code;
+	
+	@VertyCode
+	private String indexCountry;
 	
 	private String country;
 	private HashMap<String, String> countryOption;
